@@ -1,7 +1,8 @@
 on: 
   push:
     tags:
-      - vTest3
+      include:
+        - '*'
 name: Tag Test
 jobs:
   build:
