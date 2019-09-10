@@ -1,0 +1,11 @@
+on: tags
+name: Build and Publish
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Debug 
+      with:
+       entrypoint: ./entrypoint.sh
