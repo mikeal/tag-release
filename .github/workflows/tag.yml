@@ -1,4 +1,6 @@
-on: tag
+on: 
+  push:
+    tags
 name: Build and Publish
 jobs:
   build:
