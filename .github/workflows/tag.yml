@@ -1,7 +1,6 @@
 on: 
   push:
     tags:
-      include:
       - '*'
 name: Tag Test
 jobs:
