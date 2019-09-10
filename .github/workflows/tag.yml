@@ -1,8 +1,8 @@
 on: 
   push:
     tags:
-      - vTest
-name: Build and Publish
+      - vTest2
+name: Tag Test
 jobs:
   build:
     name: Build
@@ -10,5 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Debug 
+      uses: actions/checkout@master
       with:
        entrypoint: ./entrypoint.sh
