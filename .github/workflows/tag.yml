@@ -1,7 +1,7 @@
 on: 
   push:
     tags:
-      - vTest2
+      - vTest3
 name: Tag Test
 jobs:
   build:
@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Debug 
-      uses: actions/checkout@master
-      with:
-       entrypoint: ./entrypoint.sh
+    - name: Debug
+      run: |
+        ./entrypoint.sh 
